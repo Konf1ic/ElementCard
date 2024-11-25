@@ -18,7 +18,6 @@ namespace KonflicProduct {
 
         public DamageType damageType;
 
-
         public enum CardType { 
             Fire,
             Earth,
