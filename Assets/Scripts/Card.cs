@@ -2,23 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace KonflicProduct {
-    [CreateAssetMenu(fileName ="New Card", menuName = "Card")]
-    public class Card : ScriptableObject {
-        
+namespace KonflicProduct
+{
+    [CreateAssetMenu(fileName = "New Card", menuName = "Card")]
+    public class Card : ScriptableObject
+    {
         public string cardName;
-
-        public CardType cardType;
-
+        public List<CardType> cardType;
         public int health;
-
         public int damageMin;
-
         public int damageMax;
+        public Sprite cardSprite;
+        public List<DamageType> damageType;
 
-        public DamageType damageType;
 
-        public enum CardType { 
+        public enum CardType
+        {
             Fire,
             Earth,
             Water,
@@ -27,7 +26,8 @@ namespace KonflicProduct {
             Air
         }
 
-        public enum DamageType {
+        public enum DamageType
+        {
             Fire,
             Earth,
             Water,
